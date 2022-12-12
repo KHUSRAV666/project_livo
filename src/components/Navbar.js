@@ -1,33 +1,41 @@
-import { useState } from "react"; // import state
-import { Divide as Hamburger } from 'hamburger-react'
+import { Divide as Hamburger } from 'hamburger-react';
+import { useState } from "react" // import state
+import About from "../navlist/About";
+import Features from '../navlist/Features';
+import Pricing from '../navlist/Pricing';
+import Testimonials from '../navlist/Testimonials';
+import Help from '../navlist/Help';
 
 export default function Navbar() {
-  const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  let [isHover, setValue] = useState(false); // initiate isNavOpen state with false
   
+  let mouseEnter = () => {
+    console.log(123456);
+    return setValue(true);
+  };
+  let mouseLeave = () => {
+    console.log(123);
+    return setValue(false);
+  };
+ 
+  const divStyle = {
+    scale: isHover ? '' : 0
+  };
+
   return (
     <div>
-      <nav className='relative flex justify-between items-center mb-24'>
+      <nav className="relative flex justify-between items-center mb-24">
         <a href="" className="flex items-center font-medium text-xl leading-6">
           <img className="mr-2" src="/icons/logo.png" alt="" />
           <p>Lasles<span className="font-bold">VPN</span></p>
         </a>
         <div>
-          <ul className="hidden md:flex text-[#4F5665] font-normal text-base leading-5">
-            <li>
-              <a href="" className="mx-5 hover:font-[700]">About</a>
-            </li>
-            <li>
-              <a href="" className="mx-5 hover:font-[700]">Features</a>
-            </li>
-            <li>
-              <a href="" className="mx-5 hover:font-[700]">Pricing</a>
-            </li>
-            <li>
-              <a href="" className="mx-5 hover:font-[700]">Testimonials</a>
-            </li>
-            <li>
-              <a href="" className="mx-5 hover:font-[700]">Help</a>
-            </li>
+          <ul className="hidden md:flex relative z-99999 text-[#4F5665] font-normal text-base leading-5">
+            <About/>
+            <Features />
+            <Pricing />
+            <Testimonials />
+            <Help />
           </ul>
         </div>
         <div className="flex">

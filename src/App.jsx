@@ -1,3 +1,4 @@
+// import styles from './App.module.scss';
 import Counter from './components/Counter';
 import Features from './components/Features';
 import Footer from './components/Footer';
@@ -17,7 +18,7 @@ function App() {
       <Features />
       <Plan />
       <Sponsored />
-      <Swiper />
+      <Swiper />  
       <Subscribe />
       <Footer />
     </>
