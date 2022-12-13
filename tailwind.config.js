@@ -6,14 +6,16 @@ module.exports = {
       fontFamily: {
         primary: ["Rubik", "sans-serif"]
       },
-      colors: {
-        navBackground: "#ffffff",
-        background: "#E5E5E5",
-        primary: "#4F5665",
-        secondary: "#0B132A",
-        tertiary: "#F53838",
-        myBorder: "#DDDDDD"
-      }
+      screens: {
+        'sm0': '440px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md0': '568px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg0': '924px',
+        // => @media (min-width: 1024px) { ... }
+        }
     },
   },
   plugins: [],

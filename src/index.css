@@ -20,35 +20,39 @@ body {
   height: 50px !important;
 }
 
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 25px !important;
+  font-weight: 900;
+  color: black;
+}
 .swiper-button-disabled {
   background-color: #fff;
   border: 2px solid #f53838;
   border-radius: 50%;
-
 }
 
-.swiper-button-prev::before {
+/* .swiper-button-prev::before {
   content: '';
   background: url('/public/icons/swiper/back.png') center no-repeat !important;
   position: absolute;
   width: 30px !important;
   height: 30px !important;
-}
+} */
 
 .swiper-button-prev::after {
-  display: none;
+  /* display: none; */
 }
 
-.swiper-button-next::before {
+/* .swiper-button-next::before {
   content: '';
   position: absolute;
   background: url('/public/icons/swiper/next.png') center no-repeat !important;
   width: 30px !important;
   height: 30px !important;
-}
+} */
 
 .swiper-button-next::after {
-  display: none;
+  /* display: none; */
 }
 
 
@@ -73,4 +77,32 @@ body {
   width: 35px !important;
   border-radius: 15px !important;
   background-color: #f53838 !important;
+}
+
+/*//анимация карты =============================================================*/
+#circle-1 {
+  animation: fade 1.8s infinite;
+}
+#circle-2 {
+  animation: fade 2.3s ease 0.5s infinite;
+}
+#circle-3 {
+  animation: fade 2.8s ease 1s infinite;
+}
+
+/* @keyframes move-heart {
+  50% {
+    stroke-dashoffset: 60;
+  }
+} */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }

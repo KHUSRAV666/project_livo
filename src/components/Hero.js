@@ -5,7 +5,7 @@ export default function Hero() {
     <>
       <div className="flex flex-row mb-[103px]">
         <div className="basis-1/2 mr-10">
-            <div className="mt-7 font-medium text-5xl leading-normal mb-5">
+            <div className="mt-7 font-medium lg:text-5xl md:text-3xl leading-normal mb-5">
                 <h1>Want anything to be <p>easy with <b>LaslesVPN.</b></p></h1>
             </div>
             <div className="text-base leading-7 mb-[50px]">
@@ -15,7 +15,7 @@ export default function Hero() {
                 <Button text="Get Started"/>
             </div>
         </div>
-        <div className="w-[611px] h-[382px] basis-1/2">
+        <div className="relative w-[611px] h-[382px] basis-1/2">
             <img className="absolute" src="/icons/hero.png" alt="" />
         </div>
       </div>

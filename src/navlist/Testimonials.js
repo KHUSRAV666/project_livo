@@ -16,7 +16,7 @@ export default function Testimonials () {
     };
 
   return (
-    <li onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="mx-5">
+    <li onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="mx-1 lg0:mx-3 lg:mx-5">
         <a href="" className="hover:font-[700] hover:text-red-400">Testimonials</a>
         <ul style={divStyle} className="absolute w-[186px] bg-[#3333336f] rounded-[5px] origin-top transition-all">
             <li className="p-2 hover:text-white"><a href="">testimonials 1</a></li>

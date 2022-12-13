@@ -38,9 +38,9 @@ export default function Navbar() {
             <Help />
           </ul>
         </div>
-        <div className="flex">
-          <a href="" className="font-bold block mx-5 md:flex md:mx-0 md:hover:text-[#f53838] md:px-11 md:py-3 md:border-2 md:border-[transparent] md:hover:border-2 md:hover:border-[#f53838] md:hover:rounded-full">Sign In</a>
-          <a href="" className="font-bold block mx-5 md:flex md:mx-0 md:hover:text-[#f53838] md:px-11 md:py-3 md:border-2 md:border-[transparent] md:hover:border-2 md:hover:border-[#f53838] md:hover:rounded-full">Sign Up</a>
+        <div className="hidden md:flex">
+          <a href="" className="font-bold block mx-5 md:flex md:hover:text-[#f53838] lg0:px-11 md:py-3 md:border-2 md:border-[transparent] md:hover:border-2 md:hover:border-[#f53838] md:hover:rounded-full">Sign In</a>
+          <a href="" className="font-bold block mx-5 md:flex md:hover:text-[#f53838] lg0:px-11 md:py-3 md:border-2 md:border-[transparent] md:hover:border-2 md:hover:border-[#f53838] md:hover:rounded-full">Sign Up</a>
         </div>
           <div className="block md:hidden">
             <Hamburger onToggle={toggled => {
