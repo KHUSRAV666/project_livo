@@ -23,7 +23,7 @@ export default function Sponsored() {
 
   return (
     <>
-        <div className="flex justify-between items-center h-[190px] mb-[60px]">
+        <div className="sm:flex justify-between items-center md:h-[190px] mb-[60px] max-sm:mb-[30px] max-sm:flex max-sm:flex-wrap">
           <Netflix />
           <Reddit />
           <Amazon />

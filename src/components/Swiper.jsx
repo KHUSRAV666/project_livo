@@ -18,12 +18,25 @@ export default () => {
                     // install Swiper modules
                     modules={[Navigation, Pagination]}
                     spaceBetween={50}
-                    slidesPerView={3}
                     navigation
                     pagination={{ clickable: true }}
                     //   scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
+                    breakpoints={{
+                        // when window width is >= 640px
+                        440: {
+                          slidesPerView: 1,
+                        },
+                        // when window width is >= 640px
+                        640: {
+                          slidesPerView: 2,
+                        },
+                        // when window width is >= 768px
+                        1040: {
+                          slidesPerView: 3,
+                        },
+                      }}
                 >
 
                     <SwiperSlide><div className="relative cursor-pointer bg-[#fff] border-[#ddd] hover:border-[#f53838] border-2 rounded-lg p-[30px] mr-[50px] w-[400px] h-[230px] before:block before:z-[-9] before:absolute before:w-[80%] before:h-[120%] before:top-0 before:left-[10%] hover:before:bg-[#0D1025] before:opacity-[0.06] before:blur-[57px] before:rounded-[10px]">

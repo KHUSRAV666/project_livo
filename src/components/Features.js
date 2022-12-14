@@ -1,12 +1,12 @@
 export default function Features() {
   return (
     <>
-      <div className="flex justify-between mb-[126px]">
-        <div className="w-151">
+      <div className="sm:flex justify-between sm:mb-[126px] max-sm:mb-[30px]">
+        <div className="max-sm:mb-4">
             <img src="/icons/person.png" alt="" />
         </div>
-        <div className="mt-16">
-            <div className="mt-7 font-medium text-4xl leading-14 mb-5">
+        <div className="mt-16 max-md:mt-0">
+            <div className="mt-7 max-md:mt-0 font-medium lg:text-5xl md:text-3xl sm:text-xl max-sm:text-3xl max-sm0:text-2xl leading-14 mb-5">
                 <h1>We Provide Many <p>Features You Can Use</p></h1>
             </div>
             <div className="text-base leading-7">

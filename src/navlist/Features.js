@@ -16,7 +16,7 @@ export default function Features() {
     };
 
   return (
-    <li onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="mx-1 lg0:mx-3 lg:mx-5">
+    <li onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className="mx-1 lg:mx-5 lg0:mx-4 md:mx-3">
         <a href="" className="hover:font-[700] hover:text-red-400">Features</a>
         <ul style={divStyle} className="absolute w-[186px] bg-[#3333336f] rounded-[5px] origin-top transition-all">
             <li className="p-2 hover:text-white"><a href="">features 1</a></li>

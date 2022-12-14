@@ -59,6 +59,31 @@ body {
 .swiper-button-prev {
   left: 90% !important;
 }
+@media (max-width: 1134px) {
+  .swiper-button-prev {
+    left: 85% !important;
+  }
+}
+@media (max-width: 992px) {
+  .swiper-button-prev {
+    left: 80% !important;
+  }
+}
+@media (max-width: 590px) {
+  .swiper-button-prev {
+    left: 75% !important;
+  }
+}
+@media (max-width: 470px) {
+  .swiper-button-prev {
+    left: 70% !important;
+  }
+}
+@media (max-width: 388px) {
+  .swiper-button-prev {
+    left: 65% !important;
+  }
+}
 
 .swiper-pagination {
   position: absolute;
